@@ -1136,6 +1136,7 @@ fail:
 	return NULL;
 }
 
+#if 0
 static int __init setup_slub_debug(char *str)
 {
 	slub_debug = DEBUG_DEFAULT_FLAGS;
@@ -1205,6 +1206,7 @@ out:
 }
 
 __setup("slub_debug", setup_slub_debug);
+#endif
 
 static unsigned long kmem_cache_flags(unsigned long object_size,
 	unsigned long flags, const char *name,
